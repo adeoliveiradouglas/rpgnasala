@@ -1,20 +1,58 @@
 body{
-	background-image:url(https://images3.alphacoders.com/169/thumb-1920-169127.jpg);
+	background-image:url("teste00.jpg");
 
     /* Full height */
     height: 100%;
 
     /* Center and scale the image nicely */
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.formulario{
-	position:absolute;
-	top:50%;
-	left:50%;
-	width:400px;
-	height:auto;
-	margin-top:-97px;
+/*-------------------------------------------------------------------------------    NavBar    -------------------*/
+
+li a:hover{
+
+	text-decoration: none;
+	background-color: orange;
+	color: white;
+	border-radius: 5px 5px 5px 5px; 
+	text-shadow: 2px 2px 3px black;
+}
+
+li a{
+
+	color: white;
+}
+
+
+nav div h3{
+
+	color: orange;
+	text-shadow: 2px 2px 3px grey;
+
+}
+
+
+/*--------------------------------------------------------------------------------    resto    ----------------------*/
+
+div#idea{
+
+	border: 1px solid orange;
+	border-radius: 10px 10px 10px 10px;
+	margin: 150px;
+	background-color: rgba(255,255,255, 0.8);
+
+
+
+}
+
+div#idea h2{
+
+	text-align: center;
+	padding: 50px;
+	color: black;
+	/*text-shadow: 5px 2px 5px black;*/
+	
+
 }
