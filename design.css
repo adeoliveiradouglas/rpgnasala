@@ -7,6 +7,7 @@ body{
     /* Center and scale the image nicely */
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 /*-------------------------------------------------------------------------------    NavBar    -------------------*/
@@ -34,25 +35,38 @@ nav div h3{
 }
 
 
+
 /*--------------------------------------------------------------------------------    resto    ----------------------*/
 
-div#idea{
 
-	border: 1px solid orange;
+div#myCarousel{
+
+	/*border: 1px solid orange;*/
+	box-shadow: 0 4px 8px 0 rgba(160, 160, 160, 0.2), 0 6px 20px 0 rgba(160, 160, 160, 0.19);
 	border-radius: 10px 10px 10px 10px;
-	margin: 150px;
-	background-color: rgba(255,255,255, 0.8);
-
-
-
-}
-
-div#idea h2{
-
+	margin-top: 25px;
+	margin-left: 200px;
+	margin-right: 250px;
+	margin-bottom: 25px;
+	background-color: rgba(60,60,60, 0.8);
+	width: 1000px;
+	height: 500px;
 	text-align: center;
-	padding: 50px;
-	color: black;
-	/*text-shadow: 5px 2px 5px black;*/
+	padding: 20px;
 	
 
+
 }
+
+div img{
+
+	border-image-width: 200px;
+
+}
+/*
+div#divGeral{
+
+	background-color: rgba(60, 60, 60, 0.5);
+	background-size: cover;
+	height: 91%;
+}*/
