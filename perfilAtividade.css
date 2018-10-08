@@ -66,3 +66,27 @@ div h5{
 	margin-bottom: 20px;
 
 }
+
+div#MenuSec{
+
+	text-decoration: none;
+	background-color: rgb(240, 240, 240);
+	border-bottom: 1px solid black;
+	box-shadow: 1px 1px 20px 1px;
+
+
+}
+
+div#MenuSec a{
+
+	color: white;
+	text-shadow: 2px 2px 3px black;
+}
+
+
+div#MenuSec a:hover{
+	color: white;
+	background-color: orange;
+	text-shadow: 2px 2px 3px black;
+	border-radius: 5px 5px 5px 5px; 
+}
