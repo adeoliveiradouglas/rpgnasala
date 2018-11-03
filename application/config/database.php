@@ -74,12 +74,12 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
+	'dsn'	=> 'pgsql:host=localhost;port=5432;dbname=rpgnasaladb',
+	'hostname' => '',
+	'username' => 'postgres',
 	'password' => '@4vx9qkm821',
-	'database' => 'rpgnasaladb',
-	'dbdriver' => 'mysqli',
+	'database' => '',
+	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),

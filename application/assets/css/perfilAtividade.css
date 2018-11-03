@@ -1,0 +1,92 @@
+body{
+	background-image:url("teste00.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------    MenuPerfil    -----------------------*/
+
+div#Menu{
+
+	background-color: rgba(60,60,60, 1.0);
+	width: 15%;
+	height: 100%;
+	text-align: center;
+   /*	border-radius: 0px 10px 10px 0px;*/
+	/*box-shadow: 1px 5px 10px 5px;*/
+	position: fixed;
+
+}
+
+div#Menu li a{
+
+	color: white;
+	margin: 5px;
+
+}
+
+div#Menu li a:hover{
+
+	background-color: orange;
+	color: white;
+	text-shadow: 2px 2px 3px black;
+	border-radius: 5px 5px 5px 5px; 
+	/*border: 1px solid black;*/
+
+}
+
+div img{
+
+	width: 80px;
+	height: 80px;
+	margin: 20px;
+	border-radius: 5px 5px 5px 5px;
+	border: 2px solid orange;
+	box-shadow: 1px 3px 30px 10px;
+}
+
+div h5{
+
+	color: white;
+	text-shadow: 2px 2px 3px black;
+	border: 1px solid black;
+	border-radius: 5px 5px 5px 5px;
+	padding: 5px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background-color: rgba(160, 160, 160, 0.5 );
+	margin-bottom: 20px;
+
+}
+
+div#MenuSec{
+
+	text-decoration: none;
+	background-color: rgb(240, 240, 240);
+	border-bottom: 1px solid black;
+	box-shadow: 1px 1px 20px 1px;
+
+
+}
+
+div#MenuSec a{
+
+	color: gray;
+	/*text-shadow: 2px 2px 3px black;*/
+}
+
+
+div#MenuSec a:hover{
+	color: white;
+	background-color: orange;
+	text-shadow: 2px 2px 3px black;
+	border-radius: 5px 5px 5px 5px; 
+}
