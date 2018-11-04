@@ -1,37 +1,46 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 ?>
-<!DOCTYPE html>
-<html ng-app="rpgNaSalaApp" lang="pt-br">
-<head>
-<title>RPG na Sala</title>
-	<?php include_once 'components/script_css.php';?>
-</head>
-<body>
-	<!-- Menu area -->
-	<?php include_once 'components/menu.php';?>
-	
-	<div ng-controller="loginController">
-		<form role="form">
-			<div class="form-group">
-				<label for="exampleInputEmail1">Email</label> <input type="email"
-					ng-model="email" class="form-control" id="exampleInputEmail1"
-					aria-describedby="emailHelp" placeholder="Digite seu email"
-					value="daniel.sajur@gmail.com" />
 
-			</div>
-			<div class="form-group">
-				<label for="exampleInputPassword1">Senha</label> <input
-					type="password" ng-model="passwd" class="form-control"
-					id="exampleInputPassword1" placeholder="Digite sua senha">
-			</div>
 
-			<div id="opc">
-				<a id="entrada" ng-click="login()" href="#">Entrar</a> <a id="reg"
-					href="registro.html">Registrar</a></label>
-			</div>
+<!--	<?php include_once 'components/menu.php';?>  -->
 
-		</form>
-	</div>
-</body>
-</html>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6 col-md-4"></div>
+        <div class="col-6 col-md-4"><!-- Default form login -->
+            <br>
+            <form class="text-center p-5" method="post">
+               
+                <p class="h4 mb-4" style="color: #17a2b8">RPG na Sala</p>
+              
+
+                <!-- Email -->
+                <input type="email" id="email" name="email" class="form-control mb-4" required="required" placeholder="E-mail">
+
+                <!-- Password -->
+                <input type="password" id="senha" name="senha"  required="required" class="form-control mb-4" placeholder="Senha">
+
+
+                <!-- Sign in button -->
+                <button class="btn btn-info btn-block my-4" type="submit">Entrar</button>
+
+             <!--    <div class="d-flex justify-content-around">
+                    <div>
+                       
+                        <a href="">Esqueceu sua senha?</a>
+                    </div>
+                </div> -->
+
+                <!-- Register -->
+                <a href="<?=base_url()?>index.php/login/registro">Registre-se</a>
+
+            </form>
+            <br><br><br>
+            <!-- Default form login --></div>
+        <div class="col-6 col-md-4"></div>
+    </div>
+</div>
+
+
