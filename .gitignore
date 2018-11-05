@@ -4,3 +4,5 @@
 \.buildpath
 
 \.settings/
+
+application/config/database\.php
