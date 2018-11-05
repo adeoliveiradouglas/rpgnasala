@@ -24,7 +24,12 @@ class Auth extends REST_Controller {
     function __construct()
     {
         parent::__construct();
+        $this->load->library('session');
         $this->load->model('Person_model');
+        
+        if(!$this->session->has_userdata('user')){
+            redirect('','refresh');
+        }
     }
 
     public function login_get()
@@ -62,11 +67,11 @@ class Auth extends REST_Controller {
         
         $result = $this->Person_model->getPersonByLoginAndPassword($postData);
         if(isset($result)){
-            $this->set_response($result, REST_Controller::HTTP_OK); // CREATED (201) being the HTTP response code
+            $this->session->set_userdata('user', $result);
+            redirect('home','refresh');
+            //$this->set_response($result, REST_Controller::HTTP_OK); // CREATED (201) being the HTTP response code
         } else {
             $this->set_response("Usuário ou senha inválido!", REST_Controller::HTTP_UNAUTHORIZED); // CREATED (201) being the HTTP response code
         }
-        
-        
     }
 }
