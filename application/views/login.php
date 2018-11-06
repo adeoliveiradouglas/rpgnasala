@@ -40,7 +40,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 </div> -->
 
                 <!-- Register -->
-                <a href="<?=base_url('registro')?>">Registre-se</a>
+                <a href="<?=base_url(NavigationConstants::USER)?>">Registre-se</a>
             </form>
             <br><br><br>
             <!-- Default form login --></div>

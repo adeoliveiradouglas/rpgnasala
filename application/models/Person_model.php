@@ -12,5 +12,13 @@ class Person_model extends CI_Model {
         $result = $this->db->get_where('pessoa',  $postData);
         return $result->row();
     }
+
+
+    function insert($data){
+    	$this->db->insert('pessoa', $data);
+    	return $this->db->affected_rows();
+
+    }
+
 }
 
