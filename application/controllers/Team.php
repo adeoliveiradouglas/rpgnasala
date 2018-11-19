@@ -6,27 +6,24 @@ require_once APPPATH .'resources/Constants.php';
 require_once APPPATH .'resources/PageConstants.php';
 require_once APPPATH .'resources/NavigationConstants.php';
 
-class Usuario extends CI_Controller {
+require_once APPPATH .'controllers/BaseController.php';
+
+class Team extends BaseController {
     
     function __construct(){
+        
         parent::__construct();
-        
-        $this->load->helper('url');
-        
-        $this->load->library('session');
 
-        $this->load->model('Person_model');
-        
-        
+        //$this->load->model('Team_model');
     }
 
 
     public function index(){
- 		$this->load->view(PageConstants::USUARIO);    	
+ 		$this->load(PageConstants::TEAM);    	
     }
 
 
-    public function registrar(){
+    public function create(){
 
     	 $email = $this->input->post('email');
          $senha = $this->input->post('senha');

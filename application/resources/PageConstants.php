@@ -1,10 +1,11 @@
 <?php
 
-class PageConstants {
+abstract class PageConstants {
     
     public const HOME = 'home';
     public const LOGIN = 'login';
-    public const USUARIO = 'usuario';
+    public const USER = 'user';
+    public const TEAM = 'team';
     
 }
 ?>
