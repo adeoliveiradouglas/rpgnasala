@@ -32,15 +32,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <!-- Sign in button -->
                 <button class="btn btn-info btn-block my-4" type="submit">Entrar</button>
 
-             <!--    <div class="d-flex justify-content-around">
+             <!--
+                <div class="d-flex justify-content-around">
                     <div>
-                       
                         <a href="">Esqueceu sua senha?</a>
                     </div>
-                </div> -->
-
-                <!-- Register -->
+                </div> 
                 <a href="<?=base_url(NavigationConstants::USER)?>">Registre-se</a>
+            -->
+            
             </form>
             <br><br><br>
             <!-- Default form login --></div>
